@@ -1,0 +1,195 @@
+/* Палитра 
+Акцент - #2196F3;
+
+
+
+Цвет фона основной:
+ - #E5E5E5;
+ - вторичный - #F5F4FA;
+ - хеддер - #FFFFFF;
+ - футтер, герой - #2F303A
+
+цвет текста:
+вторичный - #212121;
+основной  - #757575;
+герой - #FFFFFF;
+адресс в футтере - rgba(255, 255, 255, 0.6);
+
+
+/* Стили для index.html и общие стили с portfolio.html */
+:root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primery-bg-color: #E5E5E5;
+    --secondary-bg-color:#F5F4FA;
+    --bg-hero-futter:#2F303A;
+    --complementary-color: #FFFFFF;
+    --hover-color: #188CE8;
+
+}
+
+
+body {
+    background-color: var(--primery-bg-color);
+    color: var(--primery-text-color);
+}
+
+/* Утилита сбасывающая маркеры у спимков  */
+.list {
+    list-style: none;
+}
+
+/* Хеддер */
+.page-header {
+    background-color: var(--complementary-color);
+}
+
+/* Логотип */
+.logo {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.logo-first-part {
+    color: var(--accent-color);
+}
+
+/* Навигация в шапке профиля */
+.site-nav .link {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* Текущая ссылка */
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* Контакты */
+.contacts-nav .link {
+    color: var(--primery-text-color);
+    text-decoration: none;
+}
+
+.contacts-nav .link:hover,
+.contacts-nav .link:focus{
+    color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+    background-color: var(--bg-hero-futter);
+}
+.hero-title {
+    color: var(--complementary-color);
+}
+
+/* Секции */
+/* Утилитный класс section */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Наши преимущества */
+.features .title {
+    color: var(--title-text-color);
+}
+
+/* Наша команда */
+.section.team{
+    background-color: var(--secondary-bg-color);
+}
+.our-team .title{
+    color: var(--title-text-color);
+}
+
+/* Футтер */
+footer {
+    background-color: var(--bg-hero-futter);
+}
+.logo-second-part {
+    color: var(--complementary-color);
+}
+
+.contacts .link-adress{
+    color: var(--complementary-color);
+    text-decoration: none;
+}
+
+.contacts .link-adress:hover,
+.contacts .link-adress:focus{
+    color: var(--accent-color);
+}
+
+.contacts .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.contacts .link:hover,
+.contacts .link:focus{
+    color: var(--accent-color);
+}
+/* Кнопки */
+
+/* Утилитная кнопка */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+    cursor: pointer;
+}
+
+/* Главная кнопка - заказать услугу */
+.button.primery {
+    color: var(--complementary-color);
+    background-color: var(--accent-color);
+}
+
+.button.primery:hover,
+.button.primery:focus {
+    color: var(--complementary-color);
+    background-color: var(--hover-color);
+}
+
+
+
+
+
+/* Стили для portfolio.html */
+
+/* Кнопки на странице портфолио */
+.button.secondary{
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.button.secondary.current{
+    color: var(--complementary-color);
+    background-color: var(--accent-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--complementary-color);
+    background-color: var(--accent-color);
+}
+
+/* Карточки - примеры работ */
+.work-link{
+    text-decoration: none;
+}
+
+.work-title{
+    color: var(--title-text-color);
+}
+
+.work-text {
+    color: var(--primery-text-color);
+}
+
